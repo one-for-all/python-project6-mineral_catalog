@@ -1,12 +1,12 @@
 from django.test import TestCase
 from django.shortcuts import reverse
-from .models import Mineral, initialize
+from .models import Mineral
 
 
 class MineralModelTest(TestCase):
     def setUp(self):
         self.mineral = Mineral.objects.create(
-            name= 'amazing mineral',
+            name='amazing mineral',
             category='sulfide'
         )
 
@@ -20,7 +20,7 @@ class MineralModelTest(TestCase):
 class MineralViewTest(TestCase):
     def setUp(self):
         self.mineral = Mineral.objects.create(
-            name= 'amazing mineral',
+            name='amazing mineral',
             category='sulfide'
         )
 
